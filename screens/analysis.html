@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分析中 - 色彩测试</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .animate-pulse-slow {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .animate-spin-slow {
+            animation: spin 3s linear infinite;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #e2e8f0;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #9333ea, #ec4899);
+            animation: fill 2.5s linear infinite;
+            transform-origin: left;
+        }
+        @keyframes fill {
+            0% { transform: scaleX(0); }
+            50% { transform: scaleX(0.5); }
+            100% { transform: scaleX(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 h-screen">
+    <div class="flex flex-col h-full">
+        <!-- Preview Section -->
+        <div class="flex-1 flex flex-col items-center justify-center p-6">
+            <div class="relative mb-8">
+                <div class="w-48 h-48 rounded-full overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop" 
+                         alt="用户照片" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full animate-pulse-slow"></div>
+            </div>
+
+            <!-- Analysis Status -->
+            <div class="w-full max-w-xs text-center space-y-6">
+                <div class="space-y-2">
+                    <p class="text-gray-800 font-medium">AI正在分析您的照片</p>
+                    <p class="text-gray-500 text-sm">请稍候片刻...</p>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+
+                <!-- Analysis Steps -->
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-600">面部特征识别</span>
+                        <i class="fas fa-check-circle text-green-500"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-600">肤色数据采集</span>
+                        <i class="fas fa-spinner animate-spin text-purple-500"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-400">色彩模型匹配</span>
+                        <i class="fas fa-circle text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="p-6">
+            <div class="bg-purple-50 rounded-lg p-4">
+                <p class="text-purple-800 text-sm text-center">
+                    <i class="fas fa-lightbulb mr-2"></i>
+                    您知道吗？每个人都有自己独特的色彩特质
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

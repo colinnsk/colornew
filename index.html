@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>色彩测试小程序 - 原型展示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .device-frame {
+            width: 390px;
+            height: 844px;
+            border-radius: 54px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+        .status-bar {
+            height: 44px;
+            background: white;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #333;
+            border-bottom: 1px solid #eee;
+        }
+        .mini-program-frame {
+            width: 100%;
+            height: calc(100% - 44px);
+            border: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">色彩测试小程序 - 界面原型</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Welcome Screen -->
+            <div class="device-frame">
+                <div class="status-bar">
+                    <span>色彩测试</span>
+                </div>
+                <iframe src="screens/welcome.html" class="mini-program-frame"></iframe>
+            </div>
+
+            <!-- Upload Screen -->
+            <div class="device-frame">
+                <div class="status-bar">
+                    <span>上传照片</span>
+                </div>
+                <iframe src="screens/upload.html" class="mini-program-frame"></iframe>
+            </div>
+
+            <!-- Analysis Screen -->
+            <div class="device-frame">
+                <div class="status-bar">
+                    <span>分析中</span>
+                </div>
+                <iframe src="screens/analysis.html" class="mini-program-frame"></iframe>
+            </div>
+
+            <!-- Results Screen -->
+            <div class="device-frame">
+                <div class="status-bar">
+                    <span>诊断报告</span>
+                </div>
+                <iframe src="screens/results.html" class="mini-program-frame"></iframe>
+            </div>
+
+            <!-- Profile Screen -->
+            <div class="device-frame">
+                <div class="status-bar">
+                    <span>个人中心</span>
+                </div>
+                <iframe src="screens/profile.html" class="mini-program-frame"></iframe>
+            </div>
+
+            <!-- History Screen -->
+            <div class="device-frame">
+                <div class="status-bar">
+                    <span>历史记录</span>
+                </div>
+                <iframe src="screens/history.html" class="mini-program-frame"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

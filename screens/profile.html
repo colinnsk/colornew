@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 色彩测试</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen">
+        <!-- Profile Header -->
+        <div class="bg-gradient-to-br from-purple-500 to-pink-500 text-white p-6 pb-12">
+            <div class="flex items-center space-x-4">
+                <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-white/30">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop" 
+                         alt="用户头像" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h1 class="text-xl font-semibold">Sarah Chen</h1>
+                    <p class="text-white/80 text-sm">春季型色彩达人</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="px-6 -mt-6">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <p class="text-gray-500 text-sm mb-1">测试次数</p>
+                    <p class="text-2xl font-semibold text-gray-800">3</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <p class="text-gray-500 text-sm mb-1">分享数</p>
+                    <p class="text-2xl font-semibold text-gray-800">12</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test History -->
+        <div class="p-6">
+            <h2 class="text-lg font-semibold text-gray-800 mb-4">测试记录</h2>
+            <div class="space-y-4">
+                <!-- Latest Test -->
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-lg overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" 
+                                     alt="测试照片" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">春季型</p>
+                                <p class="text-xs text-gray-500">2024-02-20</p>
+                            </div>
+                        </div>
+                        <button class="text-purple-500">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="flex space-x-2">
+                        <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">活力</span>
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">清新</span>
+                    </div>
+                </div>
+
+                <!-- Previous Test -->
+                <div class="bg-white rounded-xl p-4 shadow-sm opacity-60">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 rounded-lg overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" 
+                                     alt="测试照片" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-800">冬季型</p>
+                                <p class="text-xs text-gray-500">2024-01-15</p>
+                            </div>
+                        </div>
+                        <button class="text-purple-500">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div class="p-6">
+            <div class="bg-white rounded-xl shadow-sm divide-y">
+                <button class="w-full flex items-center justify-between p-4 text-left">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-bell text-purple-500"></i>
+                        <span class="text-gray-700">通知设置</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </button>
+                <button class="w-full flex items-center justify-between p-4 text-left">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-shield-alt text-purple-500"></i>
+                        <span class="text-gray-700">隐私设置</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </button>
+                <button class="w-full flex items-center justify-between p-4 text-left">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-question-circle text-purple-500"></i>
+                        <span class="text-gray-700">帮助与反馈</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

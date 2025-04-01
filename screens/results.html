@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诊断报告 - 色彩测试</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen pb-6">
+        <!-- Hero Section -->
+        <div class="bg-gradient-to-br from-purple-500 to-pink-500 text-white p-6 rounded-b-[2rem] shadow-lg">
+            <div class="text-center mb-8">
+                <span class="text-sm font-medium bg-white/20 px-3 py-1 rounded-full">测试完成</span>
+                <h1 class="text-2xl font-bold mt-4">您的色彩类型</h1>
+                <p class="text-lg mt-2 font-medium">春季型 · 明亮温暖</p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 mb-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-20 h-20 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop" 
+                             alt="用户照片" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex space-x-2 mb-2">
+                            <span class="bg-yellow-400/20 text-yellow-100 text-xs px-2 py-1 rounded-full">活力</span>
+                            <span class="bg-green-400/20 text-green-100 text-xs px-2 py-1 rounded-full">清新</span>
+                            <span class="bg-blue-400/20 text-blue-100 text-xs px-2 py-1 rounded-full">明快</span>
+                        </div>
+                        <p class="text-sm text-white/80">您的肤色偏暖，适合明亮、温暖的色调。建议选择充满活力的色彩来展现个性。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color Recommendations -->
+        <div class="px-6 -mt-6">
+            <div class="bg-white rounded-xl shadow-sm p-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">推荐色系</h2>
+                <div class="grid grid-cols-4 gap-3 mb-6">
+                    <div class="aspect-square rounded-lg" style="background-color: #FFB6C1"></div>
+                    <div class="aspect-square rounded-lg" style="background-color: #98FB98"></div>
+                    <div class="aspect-square rounded-lg" style="background-color: #87CEEB"></div>
+                    <div class="aspect-square rounded-lg" style="background-color: #DDA0DD"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-pink-200 rounded-lg"></div>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-800">柔和粉红</p>
+                            <p class="text-xs text-gray-500">适合日常妆容、春季服装</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-green-200 rounded-lg"></div>
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-gray-800">嫩芽绿</p>
+                            <p class="text-xs text-gray-500">适合春夏装搭配、配饰</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Style Tips -->
+        <div class="p-6 space-y-6">
+            <!-- Makeup Tips -->
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-lg font-semibold text-gray-800">妆容建议</h2>
+                    <i class="fas fa-magic text-purple-500"></i>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>底妆选择带有珠光的自然色号，提亮肤色</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>腮红使用温暖的珊瑚色，增添气色</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Fashion Tips -->
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-lg font-semibold text-gray-800">穿搭建议</h2>
+                    <i class="fas fa-tshirt text-purple-500"></i>
+                </div>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>选择明亮的暖色调服装，如杏色、珊瑚粉</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                        <span>配饰可选用金色系，增添温暖感</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Share Button -->
+        <div class="fixed bottom-6 left-6 right-6">
+            <button class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-full font-medium shadow-lg">
+                分享我的色彩报告
+            </button>
+        </div>
+    </div>
+</body>
+</html> 
