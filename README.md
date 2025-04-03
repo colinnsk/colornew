@@ -1,2 +1,0 @@
-# colornew
-# newtest
